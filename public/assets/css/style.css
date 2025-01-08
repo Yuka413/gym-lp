@@ -135,10 +135,25 @@ body {
 	padding: 12px 28px;
 }
 
-.l-header__drawer {
+.l-header__drawer-icon {
 	flex-shrink: 0;
 	height: 21px;
 	position: relative;
+	width: 28px;
+}
+
+.l-header__drawer-icon.is-checked .l-header__drawer-bar:nth-of-type(1) {
+	top: 9px;
+	transform: rotate(45deg);
+}
+
+.l-header__drawer-icon.is-checked .l-header__drawer-bar:nth-of-type(2) {
+	display: none;
+}
+
+.l-header__drawer-icon.is-checked .l-header__drawer-bar:nth-of-type(3) {
+	top: 9px;
+	transform: rotate(-45deg);
 	width: 28px;
 }
 
@@ -163,5 +178,114 @@ body {
 .l-header__drawer-bar:nth-of-type(3) {
 	bottom: 0;
 	width: 15px;
+}
+
+.l-header__pc {
+	display: none;
+}
+
+.l-header__pc-container {
+	display: flex;
+	flex-direction: row;
+	gap: 32px;
+}
+
+.l-header__pc-link {
+	font-family: "Lora", serif;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 1.5px;
+	line-height: 1.6;
+}
+
+.l-header__drawer-content {
+	background: rgba(140, 109, 59, 0.7);
+	flex: 1;
+	height: 100%;
+	height: 602px;
+	position: fixed;
+	transform: translateX(100%);
+	transition: transform 0.3s linear;
+	width: 100%;
+}
+
+.l-header__drawer-content.is-checked {
+	transform: translateX(0);
+}
+
+.l-header__drawer-container {
+	background-color: #ffffff;
+	flex-shrink: 0;
+	padding-bottom: 90px;
+	padding-top: 56px;
+	position: fixed;
+	right: 0;
+	width: 250px;
+	z-index: 500;
+}
+
+.l-header__menu {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.l-header__menu-link {
+	font-family: "Lora", serif;
+	letter-spacing: 1.6px;
+	line-height: 1.5;
+}
+
+.l-header__sns {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	justify-content: center;
+	padding-top: 56px;
+}
+
+.l-header__sns-link {
+	align-items: center;
+	background-color: #393327;
+	border-radius: 50%;
+	color: #ffffff;
+	display: flex;
+	flex-shrink: 0;
+	font-size: 20px;
+	height: 40px;
+	justify-content: center;
+	width: 40px;
+}
+
+@media screen and (min-width: 768px) {
+
+.l-header {
+	padding-bottom: 13px;
+	padding-top: 13px;
+}
+
+.l-header__sp {
+	display: none;
+}
+
+.l-header__logo {
+	padding-left: 23px;
+	padding-right: 24px;
+}
+
+.l-header__button {
+	font-size: 16px;
+	letter-spacing: 3.2px;
+	margin-left: 57px;
+}
+
+.l-header__pc {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
 }
 
