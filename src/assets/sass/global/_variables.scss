@@ -1,0 +1,22 @@
+// 色
+$text-color: #393327;
+$main-color: #8B6C3A;
+$base-color: #FAFAFA;
+
+
+// フォント
+$ff-en: "Lora", serif;
+$ff-ja:"Yu Mincho Medium", "游明朝", "Yu Mincho", "YuMincho", "Noto Serif JP", serif;
+$fz-base: 16px;
+$fw-base: 400;
+
+
+
+// ブレイクポイント
+$breakpoints :(
+    sm: "screen and (min-width: 600px)",
+    md: "screen and (min-width: 768px)",
+    lg: "screen and (min-width: 950px)",
+    xl: "screen and (min-width: 1230px)",
+    ll: "screen and (min-width: 1320px)",
+)
