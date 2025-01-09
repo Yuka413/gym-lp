@@ -1,0 +1,76 @@
+@use "../global/" as global;
+
+.p-depressed {
+  position: relative;
+  background-color: global.$base-color;
+}
+
+.p-depressed__inner {
+  @media screen and (min-width:1050px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.p-depressed__image {
+  text-align: right;
+  @include global.mq("md") {
+  }
+  img {
+    @include global.mq("md") {
+      max-height: 481px;
+      max-width: 797px;
+    }
+  }
+}
+
+.p-depressed__body {
+  padding-inline: 20px;
+  padding-top: 40px;
+  padding-bottom: 56px;
+  @include global.mq("md") {
+    padding-right: 0;
+    padding-left: 40px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.p-depressed__body-title {
+  color: #1a1a1a;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+
+  @include global.mq("md") {
+    font-size: 24px;
+    letter-spacing: 1.2px;
+  }
+}
+
+.p-depressed__contents {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.p-depressed__content {
+  padding-left: calc(24px + 8px);
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  position: relative;
+  min-height: 48px;
+
+  &::after {
+    content: "";
+    background: url("../img/check.png") no-repeat center center / cover;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

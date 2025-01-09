@@ -157,6 +157,7 @@
   width: 100%;
   background: rgba(140, 109, 59, 0.7);
   height: 602px;
+  z-index: 500;
 
   &.is-checked {
     transform: translateX(0);
@@ -179,6 +180,7 @@
   flex-direction: column;
   align-items: center;
   gap: 32px;
+  padding-bottom: 56px;
 }
 
 .l-header__menu-link {
@@ -187,23 +189,4 @@
   font-family: global.$ff-en;
 }
 
-.l-header__sns {
-  padding-top: 56px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 24px;
-}
 
-.l-header__sns-link {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-  border-radius: 50%;
-  background-color: global.$text-color;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  font-size: 20px;
-}

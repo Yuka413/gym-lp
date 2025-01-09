@@ -1,1 +1,112 @@
 @use "../global/" as global;
+
+.p-profile {
+  padding-top: 56px;
+  padding-bottom: 80px;
+
+  @include global.mq("md") {
+    padding-top: 100px;
+    padding-bottom: 92px;
+  }
+}
+
+.p-profile__inner {
+}
+
+.c-title {
+}
+
+.c-title__main {
+}
+
+.c-title__sub {
+}
+
+.p-profile__body {
+  padding-top: 40px;
+  padding-bottom: 48px;
+
+  @include global.mq("md") {
+    padding-bottom: 83px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    max-width: 878px;
+    margin: 0 auto;
+    align-items: center;
+  }
+}
+
+.p-profile__body-image {
+}
+
+.p-profile__body-content {
+}
+
+.p-profile__content {
+}
+
+.p-profile__content-top {
+  padding-block: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-profile__content-top-name {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 2.4px;
+}
+
+.p-profile__content-text {
+  line-height: 1.8;
+  letter-spacing: 0.32px;
+
+  @include global.mq("md") {
+    line-height: 2;
+    letter-spacing: 0.8px;
+  }
+}
+
+.p-profile__message {
+  border: 1px solid #8b6c3a;
+  background: #fff;
+  text-align: center;
+  padding: 24px 20px;
+
+  @include global.mq("md") {
+    padding: 64px 88px 64px 90px;
+    max-width: 878px;
+    margin: 0 auto;
+  }
+}
+
+.p-profile__message-title {
+  color: global.$main-color;
+  font-family: global.$ff-deco;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 4px;
+
+  @include global.mq("md") {
+    font-size: 56px;
+    line-height: 40px;
+    letter-spacing: 5.6px;
+  }
+}
+
+.p-profile__message-content {
+  padding-top: 16px;
+  text-align: justify;
+  line-height: 1.8;
+  letter-spacing: 0.32px;
+
+  @include global.mq("md") {
+    padding-top: 40px;
+    line-height: 2;
+    letter-spacing: 1.6px;
+  }
+}

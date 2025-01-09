@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+JP:wght@100..900&display=swap"
       rel="stylesheet"
     />
 
@@ -82,16 +82,10 @@
           <a href="" class="l-header__menu-link">Q&A</a>
           <a href="" class="l-header__menu-link">ACCESS</a>
         </nav>
-        <div class="l-header__sns">
-          <a class="l-header__sns-link l-header__sns-youtube"
-            ><i class="fa-brands fa-youtube"></i
-          ></a>
-          <a class="l-header__sns-link l-header__sns-twitter"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-          <a class="l-header__sns-link l-header__sns-instagram"
-            ><i class="fa-brands fa-instagram"></i
-          ></a>
+        <div class="c-sns">
+          <a class="c-sns__link"><i class="fa-brands fa-youtube"></i></a>
+          <a class="c-sns__link"><i class="fa-brands fa-twitter"></i></a>
+          <a class="c-sns__link"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </div>
     </div>
@@ -133,7 +127,7 @@
 
     <!-- voiceここから -->
     <div class="p-voice">
-      <div class="p-voice__inner">
+      <div class="p-voice__inner u-inner">
         <p class="p-voice__top-text">
           トレーニングを受けた会員様からこんな声が届いています。
         </p>
@@ -190,12 +184,67 @@
     <!-- voiceここまで -->
 
     <!-- profileここから -->
-     <div class="p-profile">
-      <div class="p-profile__inner">
-        .p-profile
+    <div class="p-profile">
+      <div class="p-profile__inner u-inner">
+        <div class="c-title">
+          <h2 class="c-title__main">OWNER’S PROFILE</h2>
+          <p class="c-title__sub">代表プロフィール</p>
+        </div>
+        <div class="p-profile__body">
+          <div class="p-profile__body-image">
+            <img src="./assets/img/profile.png" alt="プロフィール画像" />
+          </div>
+          <div class="p-profile__body-content p-profile__content">
+            <div class="p-profile__content-top">
+              <p class="p-profile__content-top-name">Kailani</p>
+              <div class="c-sns">
+                <a class="c-sns__link"><i class="fa-brands fa-youtube"></i></a>
+                <a class="c-sns__link"><i class="fa-brands fa-twitter"></i></a>
+                <a class="c-sns__link"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <p class="p-profile__content-text">
+              出産を機に激太りし、様々なダイエット法を試し、失敗を繰り返した過去を持つ。<br />
+              その後、筋トレや食事改善によってダイエットに成功。<br />自身の経験を活かし、現在はパーソナルトレーナーをしており、これまで1000人以上の肉体改造に成功。<br />
+              またYouTubeで1000万回再生された動画を持つ、筋トレインフルエンサーとしても活動している。<br />
+              YouTubeやInstagramではトレーニングやダイエットに良い食事法を発信している。
+            </p>
+          </div>
+        </div>
+        <div class="p-profile__message">
+          <p class="p-profile__message-title">Message</p>
+          <p class="p-profile__message-content">
+            MELIA
+            FITNESSではあなたに合った身体の動かし方や食生活の大切さをプロのトレーナーがマンツーマンでサポートいたします。<br />
+            継続することができて挫折しないボディメイク・ダイエットに自信があります。
+            ぜひMELIA FITNESSで身体づくりの素晴らしさを体験してください。
+          </p>
+        </div>
       </div>
-     </div>
+    </div>
     <!-- profileここまで -->
+
+    <!-- depressedここから -->
+    <div class="p-depressed">
+      <div class="p-depressed__inner">
+        <div class="p-depressed__image">
+          <img src="./assets/img/depressed-bg.png" alt="悩んでいる画像" />
+        </div>
+        <div class="p-depressed__body">
+          <p class="p-depressed__body-title">こんなお悩みありませんか？</p>
+          <div class="p-depressed__contents">
+            <p class="p-depressed__content">トレーニングをしても本当に痩せられるか不安。</p>
+            <p class="p-depressed__content">トレーニングしたいけど時間がない。</p>
+            <p class="p-depressed__content">厳しい食事制限に耐えられるか分からない。</p>
+            <p class="p-depressed__content">一時的に痩せてもリバウンドしないか心配。</p>
+            <p class="p-depressed__content">ダイエットに失敗してきたので続けられるか不安。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- depressedここまで -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../public/assets/js/script.js"></script>
   </body>
