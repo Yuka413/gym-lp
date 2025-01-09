@@ -1,0 +1,7 @@
+@use "../global/" as global;
+
+.u-pc__hidden{
+    @include global.mq("md"){
+        display: none;
+    }
+}

@@ -1,0 +1,133 @@
+@use "../global/" as global;
+
+.p-voice {
+  padding-top: 56px;
+  padding-bottom: 40px;
+
+  @include global.mq("md") {
+    padding-top: 96px;
+  }
+}
+
+.p-voice__inner {
+  padding-inline: 20px;
+}
+
+.p-voice__top-text {
+  color: global.$main-color;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1px;
+
+  @include global.mq("md") {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 3.2px;
+  }
+}
+
+.p-voice__cards {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @include global.mq("md") {
+    gap: 80px;
+    padding-top: 78px;
+  }
+}
+
+.p-voice__card {
+  @include global.mq("md") {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  @include global.mq("lg") {
+    gap: 90px;
+  }
+}
+
+.p-voice__card-reverse {
+  @include global.mq("md") {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+
+  @include global.mq("lg") {
+    gap: 90px;
+  }
+}
+
+.p-voice__card-image {
+  img {
+  }
+}
+
+.p-voice__card-body {
+  @include global.mq("md") {
+    max-width: 400px;
+  }
+  @include global.mq("lg") {
+    max-width: 517px;
+  }
+}
+
+.p-voice__card-top {
+  padding-top: 23px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.9px;
+
+  @include global.mq("md") {
+    padding-top: 0;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 2.4px;
+  }
+}
+
+.p-voice__card-content {
+  padding-top: 10px;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.32px;
+
+  @include global.mq("md") {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.8px;
+  }
+}
+
+.p-voice__card-personal {
+  padding-top: 12px;
+  @include global.mq("md") {
+    text-align: right;
+  }
+}
+
+.p-voice__card-personal-text {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+
+  @include global.mq("md") {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+  }
+}
