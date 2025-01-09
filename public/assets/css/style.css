@@ -257,6 +257,23 @@ body {
 	width: 40px;
 }
 
+.c-title {
+	text-align: center;
+}
+
+.c-title__main {
+	font-family: "Lora", serif;
+	font-size: 28px;
+	letter-spacing: 1.4px;
+	line-height: 1.5;
+}
+
+.c-title__sub {
+	font-size: 14px;
+	letter-spacing: 1.4px;
+	line-height: 1.5;
+}
+
 .p-mv {
 	position: relative;
 }
@@ -385,6 +402,19 @@ body {
 .l-header__logo {
 	padding-left: 22px;
 	padding-right: 23px;
+}
+
+.c-title__main {
+	font-size: 56px;
+	letter-spacing: 4.48px;
+	line-height: 1;
+}
+
+.c-title__sub {
+	font-size: 16px;
+	letter-spacing: 1.6px;
+	line-height: 1;
+	padding-top: 40px;
 }
 
 .p-mv__content {
