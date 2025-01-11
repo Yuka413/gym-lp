@@ -1,0 +1,240 @@
+@use "../global/" as global;
+
+.p-campaign {
+  padding-block: 56px;
+  padding-inline: 20px;
+  position: relative;
+  background: url(../img/gym-bg.png) no-repeat center center / cover;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  @include global.mq("md") {
+    padding-block: 96px;
+  }
+}
+
+.p-campaign__inner {
+  position: relative;
+  z-index: 2;
+  border: 1px solid global.$main-color;
+  background: #ffffff;
+  padding-top: 37px;
+  padding-bottom: 39px;
+  margin: 0 auto;
+  @include global.mq("md") {
+    max-width: 1064px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.p-campaign__container {
+  max-width: 250px;
+  margin: 0 auto;
+  padding-left: 15px;
+  @include global.mq("md") {
+    max-width: 600px;
+    padding-left: 0;
+  }
+}
+
+.p-campaign__title {
+  text-align: center;
+  color: global.$main-color;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  letter-spacing: 1px;
+  padding-block: 12px;
+  border-top: 1px solid global.$main-color;
+  border-bottom: 1px solid global.$main-color;
+
+  @include global.mq("md") {
+    padding-block: 16px;
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 6px;
+    max-width: 882px;
+    margin: 0 auto;
+  }
+}
+
+.p-campaign__course {
+  padding-top: 78px;
+
+  @include global.mq("md") {
+    padding-top: 115px;
+  }
+}
+
+.p-campaign__course-text {
+  position: relative;
+  width: fit-content;
+  line-height: 1.5;
+  letter-spacing: 2.4px;
+  @include global.mq("md") {
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: 4.2px;
+  }
+}
+
+.p-campaign__course-image {
+  top: -54px;
+  right: -79px;
+  position: absolute;
+
+  @include global.mq("md") {
+    right: -319px;
+    top: -68px;
+  }
+
+  img {
+    width: 124px;
+    height: 38px;
+    flex-shrink: 0;
+    @include global.mq("md") {
+      width: 236px;
+      height: 73px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.p-campaign-price {
+  padding-top: 9px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @include global.mq("md") {
+    padding-top: 0;
+  }
+}
+
+.p-campaign-price__normal {
+  padding-right: 18px;
+  @include global.mq("md") {
+    padding-right: 150px;
+  }
+}
+
+.p-campaign-price__normal-ja {
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+  @include global.mq("md") {
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 1.2px;
+  }
+}
+
+.p-campaign-price__normal-amount {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+
+  @include global.mq("md") {
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+  }
+}
+
+.p-campaign-price__arrow {
+  padding-right: 15px;
+  transform: translateY(5px);
+  @include global.mq("md") {
+    padding-right: 68px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    @include global.mq("md") {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+.p-campaign-price__yen {
+  color: global.$main-color;
+  font-size: 40px;
+  line-height: 1.8;
+  transform: translateY(10px);
+  @include global.mq("md") {
+    font-size: 72px;
+    line-height: 120px;
+    transform: translate(10px, 31px);
+  }
+}
+
+.p-campaign-price__zero {
+  color: global.$main-color;
+  font-size: 72px;
+  line-height: 72px;
+  padding-left: 10px;
+  @include global.mq("md") {
+    font-size: 160px;
+    line-height: 160px;
+    padding-left: 31px;
+  }
+}
+
+.p-campaign__length {
+  padding-top: 27px;
+  @include global.mq("md") {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.p-campaign__length-title {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+  padding: 3px 5px 3px 5px;
+  width: fit-content;
+  border: 1px solid;
+  @include global.mq("md") {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+  }
+}
+
+.p-campaign__length-term {
+  padding-top: 10px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  @include global.mq("md") {
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 4px;
+  }
+}
+
+.p-campaign__button {
+  padding-top: 32px;
+  text-align: center;
+  @include global.mq("md"){
+    padding-top: 58px;
+  }
+}

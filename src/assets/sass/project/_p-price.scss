@@ -1,0 +1,140 @@
+@use "../global/" as global;
+
+.p-price {
+  padding-block: 56px;
+  position: relative;
+
+  @include global.mq("md") {
+    padding-block: 96px;
+  }
+}
+
+.p-price__image {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.p-price__inner {
+  text-align: center;
+}
+
+.p-price__top {
+  display: flex;
+  flex-direction: row;
+  padding-top: 37px;
+  color: global.$main-color;
+  font-weight: 300;
+  justify-content: center;
+  align-items: end;
+
+  @include global.mq("md") {
+    padding-top: 80px;
+  }
+}
+
+.p-price__top-monthly {
+  font-size: 22px;
+  line-height: 20px;
+  letter-spacing: 2.2px;
+  padding-right: 6px;
+  transform: translateY(-7px);
+  @include global.mq("md") {
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 4px;
+    transform: translate(-27px, -9px);
+    
+  }
+}
+
+.p-price__top-yen {
+  font-size: 32px;
+  line-height: 50px;
+  letter-spacing: 3.2px;
+  transform: translateY(7px);
+  @include global.mq("md") {
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 6.4px;
+    transform: translateX(-20px);
+  }
+}
+
+.p-price__top-amount {
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 2.5px;
+
+  @include global.mq("md") {
+    font-size: 80px;
+    letter-spacing: 2px;
+    line-height: 80px;
+    transform: translateX(-20px);
+  }
+}
+
+.p-price__top-tax {
+  padding-right: 23px;
+  line-height: 20px;
+  letter-spacing: 1.6px;
+  transform: translateY(-7px);
+  @include global.mq("md") {
+    padding-right: 43px;
+    font-size: 24px;
+    line-height: 80px;
+    letter-spacing: 2.4px;
+    transform: translateY(16px);
+
+  }
+}
+
+.p-price__body {
+  padding-top: 35px;
+  color: global.$main-color;
+  @include global.mq("md") {
+    padding-top: 36px;
+  }
+}
+
+.p-price__body-main {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+
+  @include global.mq("md") {
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 2.4px;
+  }
+}
+
+.p-price__body-sub {
+  padding-top: 8px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 1.4px;
+  @include global.mq("md") {
+    padding-top: 32px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1.6px;
+  }
+}
+
+.p-price__note {
+  padding-top: 33px;
+  line-height: 27px;
+  letter-spacing: 0.32px;
+  @include global.mq("md") {
+    padding-top: 32px;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.48px;
+  }
+}
