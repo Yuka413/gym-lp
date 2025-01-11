@@ -16,9 +16,16 @@
   }
 }
 
+.c-voice__reverse {
+  @include global.mq("md") {
+    flex-direction: row-reverse;
+  }
+}
+
 .c-voice__image {
   img {
     @include global.mq("md") {
+      width: calc(450px / 1440px * 100vw);
       max-width: 450px;
     }
   }
@@ -26,12 +33,9 @@
 
 .c-voice__body {
   padding-top: 20px;
-  @include global.mq("md") {
-    max-width: 400px;
-  }
+
   @include global.mq("lg") {
     padding-top: 0;
-    max-width: 540px;
   }
 }
 

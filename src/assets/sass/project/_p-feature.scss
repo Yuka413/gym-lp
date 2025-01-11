@@ -2,11 +2,10 @@
 
 .p-feature {
   padding-top: 48px;
-  padding-bottom: 56px;
 
   @include global.mq("md") {
     padding-top: 96px;
-    padding-bottom: 96px;
+    padding-bottom: 40px;
   }
 }
 

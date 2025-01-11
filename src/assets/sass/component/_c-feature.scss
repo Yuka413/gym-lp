@@ -27,7 +27,6 @@
 .c-feature__body {
   padding-top: 21px;
   @include global.mq("md") {
-    width: 540px;
     padding-top: 0;
   }
 }

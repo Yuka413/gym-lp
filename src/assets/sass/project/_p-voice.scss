@@ -1,0 +1,31 @@
+@use "../global/" as global;
+
+.p-voice {
+  background: url(../img/voice-bg.png) repeat-y center center / cover;
+  padding-top: 113px;
+  padding-bottom: 56px;
+  @include global.mq("md") {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+.p-voice__inner {
+  @include global.mq("md") {
+    padding-top: 80px;
+    max-width: calc(1440px + 80px - 190px * 2);
+    margin: 0 auto;
+  }
+}
+
+.p-voice__contents {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  @include global.mq("md") {
+    gap: 80px;
+    padding-top: 80px;
+  }
+}

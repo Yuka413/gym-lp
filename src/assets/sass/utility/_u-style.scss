@@ -1,12 +1,16 @@
 @use "../global/" as global;
 
-.u-pc__hidden{
-    @include global.mq("md"){
-        display: none;
-    }
+.u-pc__hidden {
+  @include global.mq("md") {
+    display: none;
+  }
 }
 
-.u-indent{
-    text-indent: -1em;
-    padding-left: 0.7em;
+.u-indent {
+  text-indent: -1em;
+  padding-left: 0.7em;
+}
+
+.u-title__left {
+  text-align: left;
 }
