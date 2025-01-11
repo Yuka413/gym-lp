@@ -382,12 +382,12 @@ body {
 	width: 100%;
 }
 
-.p-voice {
+.p-merit {
 	padding-bottom: 40px;
 	padding-top: 56px;
 }
 
-.p-voice__top-text {
+.p-merit__top-text {
 	color: #8b6c3a;
 	font-size: 20px;
 	font-style: normal;
@@ -397,14 +397,14 @@ body {
 	text-align: center;
 }
 
-.p-voice__cards {
+.p-merit__cards {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
 	padding-top: 40px;
 }
 
-.p-voice__card-top {
+.p-merit__card-top {
 	font-size: 18px;
 	font-weight: 600;
 	letter-spacing: 0.9px;
@@ -412,18 +412,18 @@ body {
 	padding-top: 23px;
 }
 
-.p-voice__card-content {
+.p-merit__card-content {
 	font-weight: 400;
 	letter-spacing: 0.32px;
 	line-height: 1.8;
 	padding-top: 10px;
 }
 
-.p-voice__card-personal {
+.p-merit__card-personal {
 	padding-top: 12px;
 }
 
-.p-voice__card-personal-text {
+.p-merit__card-personal-text {
 	font-size: 14px;
 	letter-spacing: 0.7px;
 	line-height: 1.5;
@@ -669,11 +669,11 @@ body {
 	line-height: 60px;
 }
 
-.p-voice {
+.p-merit {
 	padding-top: 96px;
 }
 
-.p-voice__top-text {
+.p-merit__top-text {
 	font-size: 32px;
 	font-style: normal;
 	font-weight: 600;
@@ -681,12 +681,12 @@ body {
 	line-height: 1.5;
 }
 
-.p-voice__cards {
+.p-merit__cards {
 	gap: 80px;
 	padding-top: 78px;
 }
 
-.p-voice__card {
+.p-merit__card {
 	align-items: center;
 	display: flex;
 	flex-direction: row;
@@ -696,35 +696,35 @@ body {
 	max-width: 1440px;
 }
 
-.p-voice__card-reverse {
+.p-merit__card-reverse {
 	display: flex;
 	flex-direction: row-reverse;
 	gap: 40px;
 }
 
-.p-voice__card-body {
+.p-merit__card-body {
 	max-width: 400px;
 }
 
-.p-voice__card-top {
+.p-merit__card-top {
 	font-size: 24px;
 	letter-spacing: 2.4px;
 	line-height: 1.5;
 	padding-top: 0;
 }
 
-.p-voice__card-content {
+.p-merit__card-content {
 	font-size: 16px;
 	letter-spacing: 0.8px;
 	line-height: 2;
 	padding-top: 20px;
 }
 
-.p-voice__card-personal {
+.p-merit__card-personal {
 	text-align: right;
 }
 
-.p-voice__card-personal-text {
+.p-merit__card-personal-text {
 	font-size: 16px;
 	letter-spacing: 0.8px;
 }
@@ -897,15 +897,15 @@ body {
 	padding-top: 15px;
 }
 
-.p-voice__card {
+.p-merit__card {
 	gap: 90px;
 }
 
-.p-voice__card-reverse {
+.p-merit__card-reverse {
 	gap: 90px;
 }
 
-.p-voice__card-body {
+.p-merit__card-body {
 	max-width: 517px;
 }
 

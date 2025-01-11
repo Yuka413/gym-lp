@@ -1,6 +1,6 @@
 @use "../global/" as global;
 
-.p-voice {
+.p-merit {
   padding-top: 56px;
   padding-bottom: 40px;
 
@@ -9,10 +9,10 @@
   }
 }
 
-.p-voice__inner {
+.p-merit__inner {
 }
 
-.p-voice__top-text {
+.p-merit__top-text {
   color: global.$main-color;
   text-align: center;
   font-size: 20px;
@@ -30,7 +30,7 @@
   }
 }
 
-.p-voice__cards {
+.p-merit__cards {
   padding-top: 40px;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
   }
 }
 
-.p-voice__card {
+.p-merit__card {
   @include global.mq("md") {
     display: flex;
     flex-direction: row;
@@ -58,7 +58,7 @@
   }
 }
 
-.p-voice__card-reverse {
+.p-merit__card-reverse {
   @include global.mq("md") {
     display: flex;
     flex-direction: row-reverse;
@@ -70,12 +70,12 @@
   }
 }
 
-.p-voice__card-image {
+.p-merit__card-image {
   img {
   }
 }
 
-.p-voice__card-body {
+.p-merit__card-body {
   @include global.mq("md") {
     max-width: 400px;
   }
@@ -84,7 +84,7 @@
   }
 }
 
-.p-voice__card-top {
+.p-merit__card-top {
   padding-top: 23px;
   font-size: 18px;
   font-weight: 600;
@@ -99,7 +99,7 @@
   }
 }
 
-.p-voice__card-content {
+.p-merit__card-content {
   padding-top: 10px;
   font-weight: 400;
   line-height: 1.8;
@@ -113,14 +113,14 @@
   }
 }
 
-.p-voice__card-personal {
+.p-merit__card-personal {
   padding-top: 12px;
   @include global.mq("md") {
     text-align: right;
   }
 }
 
-.p-voice__card-personal-text {
+.p-merit__card-personal-text {
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.7px;

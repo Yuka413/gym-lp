@@ -1,0 +1,74 @@
+@use "../global/" as global;
+
+.c-voice {
+  @include global.mq("md") {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+
+  @include global.mq("lg") {
+    gap: 50px;
+  }
+  @include global.mq("xl") {
+    gap: 70px;
+  }
+}
+
+.c-voice__image {
+  img {
+    @include global.mq("md") {
+      max-width: 450px;
+    }
+  }
+}
+
+.c-voice__body {
+  padding-top: 20px;
+  @include global.mq("md") {
+    max-width: 400px;
+  }
+  @include global.mq("lg") {
+    padding-top: 0;
+    max-width: 540px;
+  }
+}
+
+.c-voice__title {
+  color: global.$main-color;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.9px;
+
+  @include global.mq("lg") {
+    font-size: 24px;
+    letter-spacing: 2.4px;
+  }
+}
+
+.c-voice__profile {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.7px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  @include global.mq("lg") {
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    padding-top: 20px;
+    padding-bottom: 24px;
+  }
+}
+
+.c-voice__text {
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+
+  @include global.mq("lg") {
+    line-height: 2;
+    letter-spacing: 0.8px;
+  }
+}
