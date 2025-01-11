@@ -1,21 +1,35 @@
 @use "../global/" as global;
 
 .c-feature {
-  padding-inline: 20px;
-  padding-top: 20px;
   @include global.mq("md") {
     display: flex;
     flex-direction: row;
-    gap: 70px;
+    gap: 30px;
     align-items: center;
     padding-top: 0;
+    justify-content: center;
+  }
+
+  @include global.mq("lg") {
+    gap: 70px;
   }
 }
 
 .c-feature__image {
+  img {
+    @include global.mq("md") {
+      width: calc(450px / 1440px * 100vw);
+      max-width: 450px;
+    }
+  }
 }
 
 .c-feature__body {
+  padding-top: 21px;
+  @include global.mq("md") {
+    width: 540px;
+    padding-top: 0;
+  }
 }
 
 .c-feature__title {
@@ -25,6 +39,7 @@
   line-height: 1.8;
   letter-spacing: 0.9px;
   position: relative;
+  padding-left: 10px;
 
   &::before {
     content: "";
@@ -35,9 +50,13 @@
     left: -12px;
     top: 50%;
     transform: translateY(-50%);
+
+    @include global.mq("xl") {
+      height: 100px;
+    }
   }
 
-  @include global.mq("md") {
+  @include global.mq("xl") {
     font-size: 28px;
     font-weight: 400;
     line-height: 50px;
@@ -50,7 +69,7 @@
   line-height: 1.8;
   letter-spacing: 0.32px;
 
-  @include global.mq("md") {
+  @include global.mq("xl") {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 0.8px;

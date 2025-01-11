@@ -6,7 +6,7 @@
 }
 
 .p-depressed__inner {
-  @media screen and (min-width:1050px) {
+  @media screen and (min-width: 995px) {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -21,6 +21,9 @@
     @include global.mq("md") {
       max-height: 481px;
       max-width: 797px;
+      @include global.mq("xl") {
+        height: 481px;
+      }
     }
   }
 }
@@ -28,11 +31,13 @@
 .p-depressed__body {
   padding-inline: 20px;
   padding-top: 40px;
-  padding-bottom: 56px;
+  padding-bottom: 60px;
   @include global.mq("md") {
     padding-right: 0;
     padding-left: 40px;
     padding-bottom: 0;
+  }
+  @media screen and (min-width: 995px) {
     padding-top: 0;
   }
 }
@@ -53,7 +58,8 @@
   padding-top: 25px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
+
 }
 
 .p-depressed__content {

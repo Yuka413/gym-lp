@@ -24,7 +24,7 @@
 
 .p-profile__body {
   padding-top: 40px;
-  padding-bottom: 48px;
+  padding-bottom: 47px;
 
   @include global.mq("md") {
     padding-bottom: 83px;
@@ -34,6 +34,12 @@
     max-width: 878px;
     margin: 0 auto;
     align-items: center;
+    padding-top: 72px;
+    padding-bottom: 78px;
+  }
+
+  @include global.mq("lg") {
+    gap: 80px;
   }
 }
 
@@ -47,11 +53,16 @@
 }
 
 .p-profile__content-top {
-  padding-block: 24px;
+  padding-top: 32px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  @include global.mq("md") {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
 }
 
 .p-profile__content-top-name {

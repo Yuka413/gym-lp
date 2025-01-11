@@ -1,5 +1,8 @@
 @use "../global/" as global;
 
-.u-inner{
-    padding-inline: 20px;
+.u-inner {
+  padding-inline: 20px;
+  @include global.mq("md") {
+    padding-inline: 40px;
+  }
 }
