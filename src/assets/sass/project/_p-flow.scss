@@ -11,7 +11,7 @@
 
 .p-flow__inner {
   @include global.mq("md") {
-    max-width: calc(1440px - 190px * 2);
+    max-width: 1140px;
     margin: 0 auto;
   }
 }

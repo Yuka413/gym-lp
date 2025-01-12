@@ -15,7 +15,7 @@
 .c-qa__question {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 13px;
     align-items: baseline;
 }
 
@@ -41,7 +41,7 @@
     padding-top: 12px;
     display: flex;
     flex-direction: row;
-    gap: 26px;
+    gap: 15px;
     align-items: baseline;
     @include global.mq("md"){
         padding-top: 36px;

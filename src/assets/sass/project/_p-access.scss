@@ -9,7 +9,7 @@
 
 .p-access__inner {
   @include global.mq("md") {
-    max-width: 1060px;
+    max-width: 1130px;
     margin: 0 auto;
   }
 }
@@ -18,7 +18,7 @@
   @include global.mq("md") {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 25px;
     align-items: flex-start;
     padding-top: 80px;
@@ -121,17 +121,18 @@
     aspect-ratio: 16/10;
 
     @include global.mq("md") {
-      aspect-ratio: 4/3;
       min-width: 400px;
+      height: 300px;
       padding-right: 40px;
     }
 
     @include global.mq("lg"){
-        min-width: 450px;
+        width: 450px;
+        height: 337px;
     }
 
     @media screen and (min-width: 1060px) {
-        min-width: 520px
-    }
+        width: 520px;
+        height: 390px;    }
   }
 }

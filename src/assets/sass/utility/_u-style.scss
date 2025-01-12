@@ -39,6 +39,8 @@
   }
 }
 
-.u-sns__right{
-  justify-content: right;
+.u-sns__right {
+  @include global.mq("md") {
+    justify-content: right;
+  }
 }

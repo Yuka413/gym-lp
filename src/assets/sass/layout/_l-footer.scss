@@ -6,12 +6,12 @@
   text-align: center;
 
   @include global.mq("md"){
-    padding-block: 40px;
+    padding-block: 48px;
   }
 }
 
 .l-footer__inner {
-  max-width: 1060px;
+  max-width: 1142px;
   margin: 0 auto;
   align-items: flex-start;
 }
@@ -69,6 +69,7 @@
   @include global.mq("md") {
     flex-direction: row;
     padding-bottom: 40px;
+    gap: 31px;
   }
 }
 
@@ -104,9 +105,12 @@
   font-size: 12px;
   line-height: 1.5;
   letter-spacing: 1.2px;
+  padding-left: 23px;
   @include global.mq("md") {
     padding-top: 0;
     white-space: nowrap;
     padding-left: 50px;
+    transform: translateX(37px);
+    padding-right: 20px;
   }
 }
