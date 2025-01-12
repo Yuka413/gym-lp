@@ -1,0 +1,31 @@
+@use "../global/" as global;
+
+.p-flow {
+  background: global.$base-color;
+  padding-block: 56px;
+
+  @include global.mq("md") {
+    padding-block: 96px;
+  }
+}
+
+.p-flow__inner {
+  @include global.mq("md") {
+    max-width: calc(1440px - 190px * 2);
+    margin: 0 auto;
+  }
+}
+
+.p-flow__contents {
+  display: grid;
+  gap: 40px;
+  padding-top: 40px;
+  @include global.mq("md") {
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 80px;
+  }
+
+  @include global.mq("xl"){
+    gap: 80px;
+  }
+}

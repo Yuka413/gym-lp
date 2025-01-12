@@ -2,6 +2,7 @@
 
 .c-title {
   text-align: center;
+  position: relative;
 }
 
 .c-title__main {
@@ -11,9 +12,14 @@
   letter-spacing: 1.4px;
 
   @include global.mq("md") {
-    font-size: 56px;
+    font-size: 48px;
     line-height: 1;
     letter-spacing: 4.48px;
+  }
+
+  @include global.mq("xl"){
+    font-size: 56px;
+
   }
 }
 

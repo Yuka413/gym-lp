@@ -14,3 +14,27 @@
 .u-title__left {
   text-align: left;
 }
+
+.u-title__line {
+  position: relative;
+  width: fit-content;
+  @include global.mq("md") {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      background-color: global.$text-color;
+      height: 0.6px;
+      right: calc(-200px - 20px);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  @include global.mq("xl") {
+    &::after {
+      width: 340px;
+      right: calc(-340px - 32px);
+    }
+  }
+}

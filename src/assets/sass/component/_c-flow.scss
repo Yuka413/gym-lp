@@ -1,0 +1,44 @@
+@use "../global/" as global;
+
+.c-flow {
+}
+
+.c-flow__image {
+    img{
+        @include global.mq("md"){
+            max-width: 300px;
+        }
+    }
+}
+
+.c-flow__step {
+  padding-top: 24px;
+  color: global.$main-color;
+  line-height: 1;
+  letter-spacing: 1.6px;
+}
+
+.c-flow__step-title {
+  padding-top: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.9px;
+  @include global.mq("md") {
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: 2.2px;
+  }
+}
+
+.c-flow__step-text {
+  padding-top: 8px;
+  line-height: 1.8;
+  letter-spacing: 0.32px;
+
+  @include global.mq("md") {
+    padding-top: 16px;
+    line-height: 2;
+    letter-spacing: 0.8px;
+  }
+}
