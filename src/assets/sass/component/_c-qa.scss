@@ -1,0 +1,64 @@
+@use "../global/" as global;
+
+.c-qa {
+
+}
+.c-qa + .c-qa{
+    border-top: 1px solid #e8e8e8;
+    padding-top: 24px;
+
+    @include global.mq("md"){
+        padding-top: 40px;
+    }
+}
+
+.c-qa__question {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: baseline;
+}
+
+.c-qa__question-q {
+  color: global.$main-color;
+  font-family: global.$ff-en;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.c-qa__question-text {
+  font-weight: 600;
+  line-height: 1.8;
+  letter-spacing: 0.32px;
+
+  @include global.mq("md"){
+    line-height: 2;
+  }
+}
+
+.c-qa__answer {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    align-items: baseline;
+    @include global.mq("md"){
+        padding-top: 36px;
+    }
+}
+
+.c-qa__answer-a {
+  font-family: global.$ff-en;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.c-qa__answer-text {
+  line-height: 1.8;
+  letter-spacing: 0.32px;
+  @include global.mq("md"){
+    line-height: 2;
+  }
+}

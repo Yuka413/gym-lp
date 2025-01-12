@@ -1,0 +1,137 @@
+@use "../global/" as global;
+
+.p-access {
+  padding-block: 56px;
+  @include global.mq("md") {
+    padding-block: 96px;
+  }
+}
+
+.p-access__inner {
+  @include global.mq("md") {
+    max-width: 1060px;
+    margin: 0 auto;
+  }
+}
+
+.p-access__container {
+  @include global.mq("md") {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    align-items: flex-start;
+    padding-top: 80px;
+  }
+
+  @include global.mq("lg"){
+    gap: 40px;
+  }
+
+  @include global.mq("xl"){
+    gap: 65px;
+  }
+}
+
+.p-access__info {
+  padding-inline: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include global.mq("md") {
+    padding-inline: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.p-access__shop-en {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 1.8px;
+
+  @include global.mq("lg") {
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 2.4px;
+  }
+}
+
+.p-access__shop-ja {
+  padding-top: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.28px;
+  @include global.mq("lg") {
+    padding-top: 16px;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+  }
+}
+
+.p-access__address {
+  padding-top: 20px;
+  line-height: 1.8;
+  letter-spacing: 0.32px;
+
+  @include global.mq("lg") {
+    padding-top: 40px;
+    line-height: 2;
+    letter-spacing: 1.6px;
+  }
+}
+
+.p-access__distance {
+  padding-top: 12px;
+  line-height: 1.8;
+  letter-spacing: 0.32px;
+  @include global.mq("lg") {
+    padding-top: 32px;
+    line-height: 1;
+    letter-spacing: 1.6px;
+  }
+}
+
+.p-access__tel {
+  padding-top: 12px;
+  line-height: 1.8;
+  letter-spacing: 1.6px;
+  @include global.mq("lg") {
+    padding-top: 40px;
+    line-height: 1;
+    letter-spacing: 1.6px;
+  }
+}
+
+.p-access__time {
+  padding-top: 12px;
+  line-height: 1.8;
+  letter-spacing: 1.6px;
+  @include global.mq("lg") {
+    padding-top: 40px;
+    line-height: 1;
+    letter-spacing: 1.6px;
+  }
+}
+
+.p-access__map {
+  iframe {
+    width: 100%;
+    aspect-ratio: 16/10;
+
+    @include global.mq("md") {
+      aspect-ratio: 4/3;
+      min-width: 400px;
+      padding-right: 40px;
+    }
+
+    @include global.mq("lg"){
+        min-width: 450px;
+    }
+
+    @media screen and (min-width: 1060px) {
+        min-width: 520px
+    }
+  }
+}

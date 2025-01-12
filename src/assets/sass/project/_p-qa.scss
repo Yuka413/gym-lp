@@ -1,0 +1,23 @@
+@use "../global/" as global;
+
+.p-qa {
+  padding-block: 56px;
+  @include global.mq("md") {
+    padding-block: 96px;
+  }
+}
+
+.p-qa__inner {
+}
+
+.p-qa__contents {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @include global.mq("md"){
+    padding-top: 80px;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+}
