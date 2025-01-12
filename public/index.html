@@ -40,7 +40,7 @@
             <img src="./assets/img/logo.png" alt="MELIA FITNESS" />
           </h1>
           <div class="l-header__container">
-            <div class="l-header__button">LINE予約</div>
+            <a href="#" class="l-header__button">LINE予約</a>
             <button id="js-drawer-icon" class="l-header__drawer-icon">
               <span class="l-header__drawer-bar"></span>
               <span class="l-header__drawer-bar"></span>
@@ -53,17 +53,17 @@
         <!--header-pcここから  -->
         <div class="l-header__pc">
           <div class="l-header__pc-container">
-            <a href="" class="l-header__pc-link">OWNER’S PROFILE</a>
-            <a href="" class="l-header__pc-link">FEATURE</a>
-            <a href="" class="l-header__pc-link">MEMBER’S VOICE</a>
+            <a href="#profile" class="l-header__pc-link">OWNER’S PROFILE</a>
+            <a href="#feature" class="l-header__pc-link">FEATURE</a>
+            <a href="#voice" class="l-header__pc-link">MEMBER’S VOICE</a>
           </div>
           <h1 class="l-header__logo">
             <img src="./assets/img/logo.png" alt="MELIA FITNESS" />
           </h1>
           <div class="l-header__pc-container">
-            <a href="" class="l-header__pc-link">PRICE</a>
-            <a href="" class="l-header__pc-link">Q&A</a>
-            <a href="" class="l-header__pc-link">ACCESS</a>
+            <a href="#price" class="l-header__pc-link">PRICE</a>
+            <a href="#qa" class="l-header__pc-link">Q&A</a>
+            <a href="#access" class="l-header__pc-link">ACCESS</a>
           </div>
           <div class="l-header__button">LINE予約</div>
         </div>
@@ -74,13 +74,13 @@
     <div id="js-drawer-content" class="l-header__drawer-content">
       <div class="l-header__drawer-container">
         <nav class="l-header__menu">
-          <a href="" class="l-header__menu-link">TOP</a>
-          <a href="" class="l-header__menu-link">OWNER’S PROFILE</a>
-          <a href="" class="l-header__menu-link">FEATURE</a>
-          <a href="" class="l-header__menu-link">MEMBER’S VOICE</a>
-          <a href="" class="l-header__menu-link">PRICE</a>
-          <a href="" class="l-header__menu-link">Q&A</a>
-          <a href="" class="l-header__menu-link">ACCESS</a>
+          <a href="#" class="l-header__menu-link">TOP</a>
+          <a href="#profile" class="l-header__menu-link">OWNER’S PROFILE</a>
+          <a href="#feature" class="l-header__menu-link">FEATURE</a>
+          <a href="#voice" class="l-header__menu-link">MEMBER’S VOICE</a>
+          <a href="#price" class="l-header__menu-link">PRICE</a>
+          <a href="#qa" class="l-header__menu-link">Q&A</a>
+          <a href="#access" class="l-header__menu-link">ACCESS</a>
         </nav>
         <div class="c-sns">
           <a class="c-sns__link"><i class="fa-brands fa-youtube"></i></a>
@@ -128,7 +128,7 @@
     <!-- meritここから -->
     <div class="p-merit">
       <div class="p-merit__inner u-inner">
-        <p class="p-merit__top-text">
+        <p class="p-merit__top-text fade-in-up">
           トレーニングを受けた会員様からこんな声が届いています。
         </p>
         <div class="p-merit__cards">
@@ -184,9 +184,9 @@
     <!-- meritここまで -->
 
     <!-- profileここから -->
-    <div class="p-profile">
+    <div id="profile" class="p-profile">
       <div class="p-profile__inner u-inner">
-        <div class="c-title">
+        <div class="c-title fade-in-up">
           <h2 class="c-title__main">OWNER’S PROFILE</h2>
           <p class="c-title__sub">代表プロフィール</p>
         </div>
@@ -257,18 +257,18 @@
     <!-- depressedここまで -->
 
     <!-- featureここから -->
-    <section class="p-feature">
+    <section id="feature" class="p-feature">
       <div class="p-feature__inner u-inner">
-        <p class="p-feature__title">
+        <p class="p-feature__title fade-in-up">
           MELIA FITNESSは<br
             class="u-pc__hidden"
           />そんな悩みをお持ちの方にこそ<br />
           ご利用していただきたい理由があります。
         </p>
         <div class="p-feature__arrow-container">
-          <div class="p-feature__arrow"></div>
+          <div id="js-arrow" class="p-feature__arrow"></div>
         </div>
-        <div class="c-title">
+        <div class="c-title fade-in-up">
           <h2 class="c-title__main">FEATURE</h2>
           <p class="c-title__sub">MELIA FITNESSが選ばれる5つの特徴</p>
         </div>
@@ -374,9 +374,9 @@
     <!-- parallaxここまで -->
 
     <!-- voiceここから -->
-    <section class="p-voice">
+    <section id="voice" class="p-voice">
       <div class="p-voice__inner u-inner">
-        <div class="c-title u-title__left">
+        <div class="c-title u-title__left fade-in-up">
           <h2 class="c-title__main u-title__line">MEMBER’S VOICE</h2>
           <p class="c-title__sub">会員様の声</p>
         </div>
@@ -434,12 +434,12 @@
     <!-- voiceここまで -->
 
     <!-- priceここから -->
-    <section class="p-price">
+    <section id="price" class="p-price">
       <div class="p-price__image">
         <img src="./assets/img/art-board.png" alt="" />
       </div>
       <div class="p-price__inner u-inner">
-        <div class="c-title">
+        <div class="c-title fade-in-up">
           <h2 class="c-title__main">PRICE</h2>
           <p class="c-title__sub">ご利用料金</p>
         </div>
@@ -523,7 +523,7 @@
     <!-- flowここから -->
     <section class="p-flow">
       <div class="p-flow__inner u-inner">
-        <div class="c-title u-title__left">
+        <div class="c-title u-title__left fade-in-up">
           <h2 class="c-title__main u-title__line">FLOW</h2>
           <p class="c-title__sub">パーソナルトレーニングの流れ</p>
         </div>
@@ -564,9 +564,9 @@
     <!-- flowここまで -->
 
     <!-- Q&Aここから -->
-    <section class="p-qa">
+    <section id="qa" class="p-qa">
       <div class="p-qa__inner u-inner">
-        <div class="c-title">
+        <div class="c-title fade-in-up">
           <h2 class="c-title__main">Q&A</h2>
           <p class="c-title__sub">よくあるご質問</p>
         </div>
@@ -663,9 +663,9 @@
     <!-- parallax-2ここまで -->
 
     <!-- accessここから -->
-    <section class="p-access">
+    <section id="access" class="p-access">
       <div class="p-access__inner">
-        <div class="c-title u-title__left u-inner">
+        <div class="c-title u-title__left u-inner fade-in-up">
           <h2 class="c-title__main u-title__line">ACCESS</h2>
           <p class="c-title__sub">アクセス</p>
         </div>
@@ -686,7 +686,7 @@
           <div class="p-access__map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1619.4353327205797!2d139.71815619999998!3d35.7293992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d6f393e6fa5%3A0x2d61fabefab2f99f!2z44K144Oz44K344Oj44Kk44OzNjDjg5Pjg6s!5e0!3m2!1sja!2sjp!4v1736693837430!5m2!1sja!2sjp"
-              style="border: 0"
+              style="border: 0;"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -758,18 +758,18 @@
     <div class="l-footer">
       <div class="l-footer__inner u-inner">
         <div class="l-footer__container">
-          <div class="l-footer__logo">
+          <a href="#" class="l-footer__logo">
             <img src="./assets/img/logo.png" alt="" />
-          </div>
+          </a>
           <div class="l-footer__links">
             <div class="l-footer__links-items">
-              <a href="" class="l-footer__links-item">TOP</a>
-              <a href="" class="l-footer__links-item">OWNER’S PROFILE</a>
-              <a href="" class="l-footer__links-item">FEATURE</a>
-              <a href="" class="l-footer__links-item">MEMBER’S VOICE</a>
-              <a href="" class="l-footer__links-item">PRICE</a>
-              <a href="" class="l-footer__links-item">Q&A</a>
-              <a href="" class="l-footer__links-item">ACCESS</a>
+              <a href="#top" class="l-footer__links-item">TOP</a>
+              <a href="#profile" class="l-footer__links-item">OWNER’S PROFILE</a>
+              <a href="#feature" class="l-footer__links-item">FEATURE</a>
+              <a href="#voice" class="l-footer__links-item">MEMBER’S VOICE</a>
+              <a href="#price" class="l-footer__links-item">PRICE</a>
+              <a href="#qa" class="l-footer__links-item">Q&A</a>
+              <a href="#access" class="l-footer__links-item">ACCESS</a>
             </div>
             <div class="c-sns u-sns__right">
               <a class="c-sns__link"><i class="fa-brands fa-youtube"></i></a>

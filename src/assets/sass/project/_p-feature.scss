@@ -28,6 +28,7 @@
 }
 
 .p-feature__arrow-container {
+  position: relative;
   display: flex;
   justify-content: center;
   padding-bottom: 37px;
@@ -38,6 +39,7 @@
 }
 
 .p-feature__arrow {
+  position: absolute;
   width: 30px;
   height: 30px;
   transform: rotate(-45deg);
@@ -50,6 +52,8 @@
     height: 56px;
   }
 }
+
+
 
 .p-feature__contents {
   padding-top: 40px;

@@ -5,7 +5,7 @@
   background-color: global.$base-color;
   text-align: center;
 
-  @include global.mq("md"){
+  @include global.mq("md") {
     padding-block: 48px;
   }
 }
@@ -74,6 +74,10 @@
 }
 
 .l-footer__links-item {
+  transition: color 0.3s ease;
+  &:hover {
+    color: global.$main-color;
+  }
 }
 
 .l-footer__links-sns {

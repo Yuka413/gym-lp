@@ -5,6 +5,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 24px;
+
 }
 
 .c-sns__link {
@@ -18,4 +19,8 @@
   align-items: center;
   color: #ffffff;
   font-size: 20px;
+  transition: opacity 0.3s ease;
+  &:hover{
+    opacity: 0.7;
+  }
 }

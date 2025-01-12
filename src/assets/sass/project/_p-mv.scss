@@ -2,6 +2,7 @@
 
 .p-mv {
   position: relative;
+  padding-top: 68px;
 }
 
 .p-mv__inner {
@@ -9,7 +10,7 @@
 
 .p-mv__content {
   position: absolute;
-  top: 40px;
+  top: 108px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -20,7 +21,7 @@
   align-items: center;
 
   @media screen and (min-width: 550px) {
-    top: 70px;
+    top: 158px;
   }
 
   @include global.mq("md") {

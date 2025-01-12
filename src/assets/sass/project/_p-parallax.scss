@@ -3,10 +3,17 @@
 .p-parallax {
   clip-path: polygon(0 30px, 100% 0, 100% calc(100% - 30px), 0 100%);
   transform: translateY(57px);
+  overflow: hidden;
+  img {
+    transition: transform 0.4s ease;
 
-  @include global.mq("md"){
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @include global.mq("md") {
     transform: translateY(75px);
     clip-path: polygon(0 70px, 100% 0, 100% calc(100% - 70px), 0 100%);
-
   }
 }
