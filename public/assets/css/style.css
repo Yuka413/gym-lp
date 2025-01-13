@@ -1966,3 +1966,12 @@ body {
 
 }
 
+@media screen and (min-width: 1700px) {
+
+.p-mv__content {
+	left: 430px;
+	top: 360px;
+}
+
+}
+

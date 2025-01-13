@@ -35,6 +35,11 @@
     left: 191px;
     top: 224px;
   }
+
+  @media screen and (min-width: 1700px) {
+    left: 430px;
+    top: 360px;
+  }
 }
 
 .p-mv__content-main {
@@ -48,7 +53,7 @@
     font-size: 32px;
   }
 
-  @include global.mq("md"){
+  @include global.mq("md") {
     text-align: left;
   }
 
